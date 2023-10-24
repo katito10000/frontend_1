@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            color: lightcoral;
+        }
+        p:hover {
+            color: blueviolet;
+        }
+
+        div p:nth-child(1) {
+            color: brown;
+        }
+
+        p::first-letter {
+            color: grey;
+        }
+
+        p::before {
+            content: "🔅";
+        }
+
+        p::after {
+            content: " ▻";
+        }
+         ::placeholder {
+            color: darkred;
+         }
+    </style>
+</head>
+<body>
+    <p>hola</p>
+    <div>
+        <p>hola</p>
+        <p>bienvenido a</p>
+
+        <p>mundo papel</p>
+    </div>
+    <input type="text" placeholder="First Name">
+</body>
+</html>   
